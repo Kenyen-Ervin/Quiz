@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="CSS/quizapp.css">
+</head>
+<script rel="text/javascript" src="Java/quizapp.js" ></script>
+<body>
+       
+    <form name="quiz" id="quiz">
+        <div class="container">
+            <h1>Quiz App</h1>
+            <div class="questions">
+            <label class="lbl" name="q1"> 1. Inside which HTML element do you put the JavaScript?</label><br><br>
+            
+           <p><input type="radio"  name="q1"  value="A">&lt; script &gt;<br></p> 
+           <p><input type="radio"   name="q1"  value="B">&lt; js &gt;<br> </p> 
+            <p><input type="radio"  name="q1"  value="C">&lt; javascript &gt;<br></p>
+           <br>
+           
+        </div>
+        <br>
+          
+        <div class="questions">
+                <label class="lbl" name="q2"> 2. What is the correct JavaScript synatx to write "Hello World" ?</label><br><br>
+                  
+            <p><input type="radio" name="q2"  value="A"> The &lt; head  &gt; section<br></p>
+            <p> <input type="radio" name="q2"  value="B">Both the &lt;body  &gt;and &lt;head &gt;section<br> </p>
+           <p><input type="radio" name="q2"  value="C">The body &lt;section &gt;<br></p> 
+        </div>
+        <br>
+       
+        <div class="questions">
+            <label class="lbl" name="q3"> 3. What is the correct syntax for referring to an external script called "File.js"?</label><br><br>
+            
+           <p><input type="radio" name="q3"  value="A">&lt;script href="File.js"&gt;<br></p> 
+            <p><input type="radio" name="q3"  value="B">&lt;script name="File.js"&gt;<br> </p>
+           <p><input type="radio" name="q3"  value="C"> &lt;script src="File.js"&gt;<br><br>
+           </div></p> 
+    
+           <div class="questions">
+            <label class="lbl" name="q4"> 4. How to write an IF statement in JavaScript?</label><br><br>
+            
+           <p><input type="radio" name="q4"  value="A"> if i=5 then   <br></p> 
+            <p><input type="radio" name="q4"  value="B"> if i=5 <br> </p>
+           <p><input type="radio" name="q4"  value="C"> if (i==5) <br><br>
+           </div></p> 
+            
+    
+           <div class="questions">
+            <label class="lbl" name="q5"> 5. How to do you create function in JavaScript?</label><br><br>
+            
+           <p><input type="radio" name="q5"  value="A"> function myfunction()   <br></p> 
+            <p><input type="radio" name="q5"  value="B"> function = myfunction() <br> </p>
+           <p><input type="radio" name="q5"  value="C"> function:myfunction <br><br>
+           </div></p> 
+            
+           <div class="questions"> 
+            <label class="lbl" >6. JavaScript is used to:(select all that apply)</label><br><br><br>
+            <input type="checkbox" name="q6a" value="A">
+            <lable>Handle client-side calculations</lable><br>
+            <input type="checkbox" name="q6b" value="B">
+            <label>Add styling to a webpage</label><br>
+            <input type="checkbox" name="q6c" value="C">
+            <label>Define content semantically on a page</label><br>
+            <input type="checkbox" name="q6d" value="D">
+            <lable>Add dynamic functionality to a webpage</lable>
+           </div>
+           <br>
+
+           <div class="questions">
+            <label class="lbl" name="q7"> 7. Which of the following methods return a node, nodes, based on the arguments sent?</label><br><br>
+            
+           <p><input type="radio" name="q7"  value="A">getElementBy()<br></p> 
+            <p><input type="radio" name="q7"  value="B">getElementByTagNameNS()<br> </p>
+           <p><input type="radio" name="q7"  value="C">getElementByTagName<br></p>
+            <p><input type="radio" name="q7" value="D">All of These</p>
+           </div><br>
+
+           <div class="questions">
+            <label class="lbl" name="q8"> 8. If a developer needs to hold a piece of data in Javascript for use later in a function,<br> what would they use?</label><br><br>
+            
+           <p><input type="radio" name="q8"  value="A">Function<br></p> 
+            <p><input type="radio" name="q8"  value="B">Variable<br> </p>
+           <p><input type="radio" name="q8"  value="C">Copy<br></p>
+            <p><input type="radio" name="q8" value="D">Container</p>
+           </div><br>
+
+           <div class="questions">
+            <label class="lbl" name="q9"> 9. What is jQuery</label><br><br>
+            
+           <p><input type="radio" name="q9"  value="A">Lightweight,"write less,do more" JavaSript library<br></p> 
+            <p><input type="radio" name="q9"  value="B">A vector-graphic language<br> </p>
+           <p><input type="radio" name="q9"  value="C">A language specifically written to acess databases<br></p>
+            <p><input type="radio" name="q9" value="D">Java-based quesry language</p>
+           </div><br>
+
+           <div class="questions">
+            <label class="lbl" name="q10"> 10. Which is the key to dynamic activity on webpage?</label><br><br>
+            
+           <p><input type="radio" name="q10"  value="A">To store information in cookies<br></p> 
+            <p><input type="radio" name="q10"  value="B">To have interactivity<br> </p>
+           <p><input type="radio" name="q10"  value="C">To remember what needs to happen<br></p>
+            <p><input type="radio" name="q10" value="D">To make sure nothing happens</p>
+           </div><br>
+
+
+    
+    
+            
+           <input type="button" class="btn" value="Submit" onclick="check()">
+           <p id="result"> </p>
+    
+            
+             
+        </div>  
+    </form>
+</body>
+</html>
